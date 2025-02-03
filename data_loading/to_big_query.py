@@ -5,7 +5,7 @@ from google.cloud import bigquery
 # Configuração do caminho para o arquivo de chave JSON
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gcp_key.json"
 
-# Função para carregar os dados transformados no BigQuery
+# # Function to load data transformed into BigQuery
 def load_to_bigquery(file_path, dataset_id, table_name):
     """
     Carrega um arquivo transformado (CSV) para o BigQuery.
@@ -38,7 +38,7 @@ def load_to_bigquery(file_path, dataset_id, table_name):
 
 # Exemplo de uso
 if __name__ == "__main__":
-    file_path = "data_transformation/transformed_data/transformed_sales_data.csv"  # Caminho para o arquivo transformado
+    file_path = "data_transformation/transformed_data/transformed_sales_data.csv"  
     dataset_id = "pipeline-projeto-vendas.sales_data"  # Substitua pelo ID do seu dataset no BigQuery
     table_name = "transformed_sales_data"  # Nome da tabela no BigQuery
     load_to_bigquery(file_path, dataset_id, table_name)
