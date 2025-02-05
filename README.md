@@ -41,7 +41,7 @@ The goal of this project is to build a robust ETL pipeline to process and analyz
 
 1. Clone the repository:
    ```sh
-   git clone /Desktop/Github/etl-pipeline-project-sales.git
+   git clone https://github.com/bsrikanth24/etl-pipeline-project-sales.git
    cd etl-pipeline-project-sales
    ```
 2. Create and activate a virtual environment:
